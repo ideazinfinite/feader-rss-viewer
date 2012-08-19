@@ -1,0 +1,67 @@
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Untitled Document</title>
+<link rel="stylesheet" type="text/css" href="chrome.css">
+<script type="text/javascript" src="options.js"></script>
+</head>
+
+<body class="oneColElsCtrHdr">
+
+<div id="container">
+  <div id="header" class="leftCol fL">
+    <p class="txtTitle"><em> &nbsp; feader &nbsp; &nbsp; </em></p>
+  <!-- end #header --></div>
+  <div id="mainContent" class="rightCol fL">
+    <p class="txtTitle">Configure</p>
+    <hr />
+
+   <div id="formContent" class="formContent">
+      <p>
+        <label for="URL_txt">Feed URL</label><br/>
+        <input type="text" name="URL_txt" id="URL_txt" accesskey="a" tabindex="1" size="60" /> (starting with http://)
+        <button id="addButton">Add</button>
+        
+      </p>
+      <p>
+        <label for="URL_list">Active Feeds</label><br/>
+        <select name="URL_list" size="10" id="URL_list">
+        </select>
+        <button id="remButton">Remove Selected</button>
+      </p>
+     <p>&nbsp;</p>
+	   <p>
+        <label for="storyCount"># of stories per feed? </label>
+        <input type="number" name="storyCount" id="storyCount" accesskey="c" tabindex="2"  min="1" max="30" /> (min: 1, max: 30)
+      </p>
+
+    <p>
+        <label for="autoPlay">Auto-cycle through all stories? <input name="autoPlay" value="autoPlay" id="autoPlay" type="checkbox">, switch every </label>
+        <input type="number" name="autoPlayFreq" id="autoPlayFreq" accesskey="p" tabindex="3" min="5" max="60"  /> 
+        seconds (min: 5, max: 60)
+      </p>
+
+    <p>
+        <label for="refreshInterval">Refresh ALL feeds every </label>
+        <input type="number" name="refreshInterval" id="refreshInterval" accesskey="r" tabindex="4"  min="10" max="240" />
+        minutes  (min: 10, max: 240)
+      </p>
+   <p>&nbsp;</p>
+      <p>
+        <button id="saveButton">&nbsp; Save &nbsp; </button>
+      </p>
+
+      <p id="status" class="txtStatus">
+        
+      </p>
+    <hr/>
+	<div id="footer" class="txtFooter">
+    <p>Copyright 2012. All Rights Reserved.</p>
+  <!-- end #footer --></div>
+    </div>
+    
+	<!-- end #mainContent --></div>
+	<div class="cB"></div>
+ 
+<!-- end #container --></div>
+</body>
+</html>

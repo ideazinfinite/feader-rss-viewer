@@ -1,0 +1,20 @@
+{
+  "name": "feader",
+  "version": "1.0",
+  "manifest_version": 2,
+  "description": "Displays RSS feeds in a small desktop notification styled window, keeps you current while keeping you productive.",
+  "icons": { "16": "icon-16.png",
+           "48": "icon-48.png",
+          "128": "icon-128.png" },
+  "background": {
+       "scripts": ["launcher.js"]
+     },
+  "options_page": "options.html",
+  "browser_action": {
+    "default_icon": "icon-19.png"
+  },
+"content_security_policy": "script-src 'self' https://ajax.googleapis.com; object-src 'self'",
+  "permissions": [
+    "tabs", "notifications", "http://*/*", "https://*/*"
+  ]
+}

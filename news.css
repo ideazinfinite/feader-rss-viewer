@@ -1,0 +1,57 @@
+html, body {
+  margin: 0px;
+  padding: 0px;
+  height: auto;
+ 
+}
+#previous, #next, #contentlink, #feedtitle, #resume{
+    display: none;
+}
+.container { width:300px;  background-color:#ffffff;}
+.divTitle { width:300px; height:auto; background-color:#ffffff; padding:2px;}
+.divContent { height:15px; background-color:#ffffff; margin-right:10px; }
+.divStatus { height:10px; background-color:#007F7F; padding-left:5px;}
+.divIcon { padding-left:5px; }
+.fL {float:left;}
+.fR {float:right;}
+.cB {clear:both;}
+
+.br10 { height:10px;}
+.br2 { height:2px;}
+.br5 { height:5px;}
+
+.txtContent { 
+	font-family: "futura-pt-1","futura-pt-2",helvetica,arial,sans-serif;
+	font-weight: 550;
+	font-style: italic;
+	font-size: 13px;
+/*	text-transform: uppercase; */
+/*	letter-spacing: -.05em;*/
+	color: #636363;
+	text-transform: lowercase;
+/*	margin: .5em 0; */
+	}
+
+.txtStatus { 
+		font-family: "futura-pt-1","futura-pt-2",helvetica,arial,sans-serif;
+		font-weight: 550;
+		font-style: normal;
+		font-size: 9px;
+	/*	text-transform: uppercase; */
+	/*	letter-spacing: -.05em;*/
+		color: #fff;
+	/*	margin: .5em 0; */
+		}
+.txtTitle, a, a:visited, a:hover { 
+		font-family: "futura-pt-1","futura-pt-2",helvetica,arial,sans-serif;
+		font-weight: 500;
+		font-style: normal;
+		font-size: 105%;   
+	/*	margin: 1.5em 0 .5em 0;   */
+	/*	text-transform: uppercase; */
+	/*	letter-spacing: -.05em;*/
+		color: #2A2A2A;
+		text-decoration:none;
+		
+		
+		}
