@@ -12,6 +12,7 @@ chrome.browserAction.onClicked.addListener(function(tab) {
     }
     else
     {
+	    console.log("Feader instance already running, closing and relaunching.");
 	    notification.cancel();
 	    notification = webkitNotifications.createHTMLNotification(
 		'news.html'
