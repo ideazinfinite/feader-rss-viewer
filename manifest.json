@@ -1,6 +1,6 @@
 {
   "name": "feader",
-  "version": "1.0",
+  "version": "1.0.1",
   "manifest_version": 2,
   "description": "Displays RSS feeds in a small desktop notification styled window, keeps you current while keeping you productive.",
   "icons": { "16": "icon-16.png",
