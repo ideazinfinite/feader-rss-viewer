@@ -8,7 +8,7 @@ chrome.browserAction.onClicked.addListener(function(tab) {
 	//VERIFY IF ITS NOT ALREADY RUNNING
     if(chrome.extension.getViews({type:"notification"}).length == 0)
     {
-	    //console.log("length is : " + chrome.extension.getViews({type:"notification"}).length);
+	    //console.log(" length is : " + chrome.extension.getViews({type:"notification"}).length);
 	    notification = webkitNotifications.createHTMLNotification(
 		'news.html'
 		);
