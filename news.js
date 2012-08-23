@@ -124,13 +124,13 @@ function refreshFeeds(run)
 
 
         $("#next").unbind('click').click(function () {
-	        console.log("Next clicked")
+	        //console.log("Next clicked")
             calcNext();
             updatecontent();
         });
 
         $("#previous").unbind('click').click(function () {   
-	        console.log("Previous clicked")
+	        //console.log("Previous clicked")
             calcPrev();
             updatecontent();
         });
@@ -167,7 +167,7 @@ function refreshFeeds(run)
 
    function calcNext()
 	{
-		console.log("calcNext called");
+		//console.log("calcNext called");
 		if (counter < (entrylist.length - 1)) { 
             counter += 1;
         } else {
