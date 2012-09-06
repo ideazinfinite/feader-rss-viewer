@@ -11,6 +11,9 @@ body, html {
   overflow-y:hidden;
   overflow-x:hidden;
 }
+#clearCache{
+    display: none;
+}
 @font-face {
     font-family: "Open Sans";
     src: url(OpenSans-Regular.ttf) format("truetype");
@@ -44,6 +47,8 @@ hr {
 .leftCol {padding:10px 0px 0px 25px; background-color:#EDEDED; height:100%;}
 .rightCol {margin:10px 0px 0px 25px; background-color:#fff; height:100%;}
 .formContent {margin:10px 0px 0px 10px; background-color:#fff; height:100%; font-size:12px; color:#616161;}
+.fL {float:left;}
+.fR {float:right;}
 .txtTitle {
 	font-family: 'Open Sans';
     font-weight: normal;
@@ -62,6 +67,7 @@ hr {
     font-size:14px;
     color:#fff;
     padding-left:15px;
+    padding-right:5px;
 }
 .cB {clear:both;}
 .fL {float:left;}

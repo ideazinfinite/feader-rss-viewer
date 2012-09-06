@@ -1,5 +1,5 @@
 //Feader's configure page javascript
-var DEF_URL = "http://feeds.bbci.co.uk/news/rss.xml", DEF_storyCount=12, DEF_autoPlay=true, DEF_autoPlayFreq=12, DEF_refreshInterval=30;
+var DEF_URL = "http://feeds.bbci.co.uk/news/rss.xml", DEF_storyCount=12, DEF_autoPlay=true, DEF_autoPlayFreq=12, DEF_refreshInterval=30, DEF_hideStories=false;
 var count=0;
 
 var feedList;
@@ -93,6 +93,7 @@ function saveOptions() {
 	var autoPlayFreq=document.getElementById("autoPlayFreq").value;
 	var autoPlay=document.getElementById("autoPlay").checked;
 	var refreshInterval=document.getElementById("refreshInterval").value;
+	var hideStories=document.getElementById("hideStories").checked;
 	
 	
 	localStorage["feedList"] = feedList;
@@ -100,6 +101,7 @@ function saveOptions() {
 	localStorage["autoPlay"] = autoPlay;
 	localStorage["autoPlayFreq"] = autoPlayFreq;
 	localStorage["refreshInterval"] = refreshInterval;
+	localStorage["hideStories"] = hideStories;
 	//alert(feedList);
 	
 	
@@ -117,6 +119,7 @@ function restore_options() {
   var autoPlay = localStorage["autoPlay"];
   var autoPlayFreq = localStorage["autoPlayFreq"];
   var refreshInterval = localStorage["refreshInterval"];
+  var hideStories = localStorage["hideStories"];
   
   if (!feedList) {
     feedList=DEF_URL;
@@ -137,6 +140,11 @@ function restore_options() {
 
   if (!refreshInterval) {
     refreshInterval=DEF_refreshInterval;
+  }
+
+  if (!hideStories) {
+    hideStories=DEF_hideStories;
+
   }
 
   var list = feedList.split(";");
@@ -163,10 +171,24 @@ function restore_options() {
   {document.getElementById('autoPlay').checked=false; }
   document.getElementById('autoPlayFreq').value=autoPlayFreq;
   document.getElementById('refreshInterval').value=refreshInterval;
+  if(hideStories=="true")
+  {document.getElementById('hideStories').checked=true; }
+  else
+  {document.getElementById('hideStories').checked=false; }
 
   document.getElementById('URL_txt').value="http://";
 }
 
+function restoreALL()
+{
+	//from 'javascrypt' encryption library
+	ce();	    	    	    	// Add time we got here to entropy
+	mouseMotionEntropy(60);   	// Initialise collection of mouse motion entropy
+	
+	//restore options on page
+	restore_options();
+	restoreRIL();
+}
 
 
 
@@ -184,4 +206,4 @@ document.addEventListener('DOMContentLoaded', function () {
   document.getElementById("saveButton").addEventListener('click', saveOptions);
 });
 
-window.onload = restore_options;
+window.onload = restoreALL;

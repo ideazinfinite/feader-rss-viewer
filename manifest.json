@@ -1,8 +1,8 @@
 {
   "name": "feader RSS reader",
-  "version": "1.0.1.2",
+  "version": "1.1.0.0",
   "manifest_version": 2,
-  "description": "Displays RSS feeds in a small desktop notification styled window, keeps you current while keeping you productive.",
+  "description": "Displays RSS feeds in a small desktop notification styled window, now with Pocket(R) support!",
   "icons": { "16": "icon-16.png",
            "48": "icon-48.png",
           "128": "icon-128.png" },

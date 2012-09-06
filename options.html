@@ -1,8 +1,11 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Untitled Document</title>
+<title>feader - Configure </title>
 <link rel="stylesheet" type="text/css" href="chrome.css">
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="javascrypt.js"></script>
 <script type="text/javascript" src="options.js"></script>
+<script type="text/javascript" src="ril.js"></script>
 </head>
 
 <body class="oneColElsCtrHdr">
@@ -28,7 +31,6 @@
         </select>
         <button id="remButton">Remove Selected</button>
       </p>
-     <p>&nbsp;</p>
 	   <p>
         <label for="storyCount"># of stories per feed? </label>
         <input type="number" name="storyCount" id="storyCount" accesskey="c" tabindex="2"  min="1" max="30" /> (min: 1, max: 30)
@@ -45,14 +47,41 @@
         <input type="number" name="refreshInterval" id="refreshInterval" accesskey="r" tabindex="4"  min="10" max="240" />
         minutes  (min: 10, max: 240)
       </p>
-   <p>&nbsp;</p>
+
+    <p>
+        <label for="hideStories">Hide stories I click on</label>
+        <input name="hideStories" value="hideStories" id="hideStories" type="checkbox">
+    </p>
       <p>
+	   <div class="fL">
         <button id="saveButton">&nbsp; Save &nbsp; </button>
+       </div>
+       <div class="fR">
+	    <button id="clearCachePrompt">&nbsp; Clear Cache &nbsp; </button>
+	    <button id="clearCache">&nbsp; Yes, please clear cache &nbsp; </button>
+	   </div>
+	   <div style="clear:both"></div>
       </p>
 
       <p id="status" class="txtStatus">
         
       </p>
+   <hr />
+     <p>&nbsp;</p>
+    <p><img src="pocket-logo.png" border='0' /></p>
+      <p>
+        <label for="rilUser">Username: </label> <input type="text" name="rilUser" id="rilUser" tabindex="5" size="30" /> <br/>
+       <label for="rilPass">Password: </label> &nbsp; <input type="password" name="rilPass" id="rilPass"  tabindex="6" size="30" />
+       <button id="rilButton">&nbsp; Save &nbsp; </button> &nbsp; &nbsp; <button id="rilDisableButton" disabled>&nbsp; Disable  &nbsp; </button>
+      </p>
+
+      <p id="status2" class="txtStatus">
+
+      </p>
+
+
+
+
     <hr/>
 	<div id="footer" class="txtFooter">
     <p>Copyright 2012. All Rights Reserved.</p>

@@ -1,16 +1,16 @@
 html, body {
   margin: 0px;
   padding: 0px;
-  height: auto;
- 
+  height: 100%;
+  
 }
-#previous, #next, #contentlink, #feedtitle, #resume{
+#previous, #next, #contentlink, #feedtitle, #resume, #ril, #ril-read{
     display: none;
 }
-.container { width:300px;  background-color:#ffffff;}
+.container { width:300px;  background-color:#ffffff; height:20px;}
 .divTitle { width:300px; height:auto; background-color:#ffffff; padding:2px;}
-.divContent { height:15px; background-color:#ffffff; margin-right:10px; }
-.divStatus { height:10px; background-color:#007F7F; padding-left:5px;}
+.divContent { height:15px; background-color:#ffffff; padding-right:5px; }
+.divStatus { height:11px; background-color:#007F7F; padding-left:3px;}
 .divIcon { padding-left:5px; }
 .fL {float:left;}
 .fR {float:right;}
